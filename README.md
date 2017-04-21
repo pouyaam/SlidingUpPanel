@@ -1,6 +1,10 @@
 # SlidingUpPanel
 iOS: Simple Sliding Up Panel With TabBar.
 
+
+![ios_sliding_up_panel](https://cloud.githubusercontent.com/assets/14278014/25291549/bbc26b6a-26e7-11e7-88fe-35ebb94f35e1.gif)
+
+
 # Installation
 There is only one way to install it to your project
 Just copy TSSlidingUpPanelManager.swift into your project
