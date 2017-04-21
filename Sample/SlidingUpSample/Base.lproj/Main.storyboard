@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="D8J-8s-31z">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SUFirstScreenVC" customModule="SlidingUpSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNQ-GE-bC9">
+                                <rect key="frame" x="134" y="312.5" width="106" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Obc-JL-WfJ"/>
+                                    <constraint firstAttribute="width" constant="106" id="rDJ-JO-zw5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                <state key="normal" title="Click ME !!!"/>
+                                <connections>
+                                    <action selector="toggleSlidingUpPanel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gWm-nL-g3O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pNQ-GE-bC9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gOz-lu-Wmy"/>
+                            <constraint firstItem="pNQ-GE-bC9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sSP-mS-tjv"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="9Im-JH-ng3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="888.30584707646187"/>
+        </scene>
+        <!--Sliding UpVC-->
+        <scene sceneID="LKX-Ej-e5V">
+            <objects>
+                <viewController storyboardIdentifier="SUSlidingUp" id="3mN-r7-Rwp" customClass="SUSlidingUpVC" customModule="SlidingUpSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="msh-iF-rDr"/>
+                        <viewControllerLayoutGuide type="bottom" id="9zz-2R-Wgo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bis-66-ysy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dM0-PT-sRl">
+                                <rect key="frame" x="166" y="30" width="42" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="gx2-5N-6SG"/>
+                                    <constraint firstAttribute="width" constant="42" id="kYy-i8-QVA"/>
+                                </constraints>
+                                <state key="normal" image="arrow_down"/>
+                                <connections>
+                                    <action selector="toggleSlidingUpPanelBtnPressed:" destination="3mN-r7-Rwp" eventType="touchUpInside" id="f2E-I6-9um"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WoW So GOOOOD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D88-kK-tRf">
+                                <rect key="frame" x="67" y="323" width="241" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99879205230000001" green="0.5171622038" blue="0.24310754239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="dM0-PT-sRl" firstAttribute="centerX" secondItem="Bis-66-ysy" secondAttribute="centerX" id="Eaj-7g-oKS"/>
+                            <constraint firstItem="dM0-PT-sRl" firstAttribute="top" secondItem="msh-iF-rDr" secondAttribute="bottom" constant="10" id="cgG-eV-dKO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="toggleSlidingUpPanelBtn" destination="dM0-PT-sRl" id="t9N-yi-fvH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sRq-7L-55T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1160.8" y="123.68815592203899"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vTB-MU-Anl">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="D8J-8s-31z" customClass="SUTabBarController" customModule="SlidingUpSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="oys-Dj-JgR">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="suTabBar" destination="oys-Dj-JgR" id="yQu-vz-Rgc"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="JbJ-kt-g1j"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eL6-qZ-ZuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow_down" width="128" height="128"/>
+    </resources>
+</document>
